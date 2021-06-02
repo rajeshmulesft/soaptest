@@ -30,6 +30,22 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
+				
+				 <cloudHubDeployment>
+						    <uri>https://anypoint.mulesoft.com</uri>
+						    <muleVersion>4.3.0</muleVersion>
+						    <!-- Deploy User Parameter -->
+						    <username>rajesh052021</username>
+						    <password>MUL22soft</password>
+						    <!-- Environment Parameter -->
+						    <environment>Sandbox</environment>
+						    <workerType>MICRO</workerType>
+                        <objectStoreV2>true</objectStoreV2>
+						    
+						    <applicationName>soaptest123</applicationName>
+						    <businessGroup>abc</businessGroup>
+						    <workerType>1</workerType>
+						</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
